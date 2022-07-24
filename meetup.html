@@ -11,17 +11,51 @@
     <form>
 
         <label for="username">enter your username</label>
-        <input type="text" id="username" name="username">
+        <input type="text" id="username" name="username" placeholder="John" required>
 
-        <br>
-        <br>
+        <br><br>
 
         <label for="email">Please Enter your email</label>
-        <input type="email" id="email" name="email">
+        <input type="email" id="email" name="email" placeholder="john@huaman.com" required>
 
-        <br>
+        <br><br>
+        
+        <label for="password">Please Enter Password</label>
+        <input type="password" name="password" id="password" placeholder="choose a password" required>
 
+        <p>Select the Date to Meet the Caste: </p>
 
+        <input type="radio" name="date" value="11th August 2022" id="option-1">
+        <label for="option-1">11th August 2022</label>
+        <input type="radio" name="date" value="12th August 2022" id="option-2">
+        <label for="option-2">12th August 2022</label>
+        <input type="radio" name="date" value="13th August 2022" id="option-3">
+        <label for="option-3">13th August 2022</label>
+
+        <br><br>
+
+        <label for="question">Security question</label>
+        <select name="question" id="question">
+
+            <option value="q1">What is Your Age?</option>
+            <option value="q2">Name of Your Pet?</option>
+            <option value="q3">Name of Your Best Friend?</option>
+
+         </select>
+        
+         <br><br>
+
+         <label for="security-answer">Answer: </label>
+         <input type="text" name="security-answer" id="security-answer" placeholder="Your Answer here....." required>
+
+         <br><br>
+
+         <label for="bio">Bio: </label>
+         <br>
+         <textarea name="bio" id="bio" cols="30" rows="10" placeholder="My name is ........."></textarea>
+         <br><br>
+         
+         <input type="submit" value="Submit Form">
     </form>
     
 </body>
